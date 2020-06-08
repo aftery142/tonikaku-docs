@@ -365,8 +365,8 @@ instead of a file, specify `f=@-` instead of `f=@file.png`.
 ```js
 {
   *: file,
-  random: boolean, // default: false
-  name: "" // leave default or empty for random name
+  ?random: boolean, // default: false
+  ?name: ?string // leave default or empty for random name
  }
 ```
 
@@ -400,8 +400,8 @@ Random name will be generated otherwise.
 ```js
 {
   url: string
-  random: boolean, // default: false
-  name: "" // leave default or empty for random name
+  ?random: boolean, // default: false
+  ?name: ?string // leave default or empty for random name
 }
 ```
 
