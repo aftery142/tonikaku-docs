@@ -346,6 +346,9 @@ is consumed, so any field works.
 
 You can add a `random` field to use random domains when uploading.
 
+Use the `name` field to specify a name for your file.
+Random name will be generated otherwise.
+
 #### Examples
 
 ```sh
@@ -362,8 +365,9 @@ instead of a file, specify `f=@-` instead of `f=@file.png`.
 ```js
 {
   *: file,
-  random: boolean // default: false
-}
+  random: boolean, // default: false
+  name: "" // leave default or empty for random name
+ }
 ```
 
 #### Output
@@ -386,14 +390,18 @@ instead of a file, specify `f=@-` instead of `f=@file.png`.
 
 Shortens a link.
 
-You can add a `random` field to use random domains when uploading.
+You can add a `random` field to use random domains when shortening.
+
+Use the `name` field to specify a name for your link.
+Random name will be generated otherwise.
 
 #### Input
 
 ```js
 {
   url: string
-  random: boolean // default: false
+  random: boolean, // default: false
+  name: "" // leave default or empty for random name
 }
 ```
 
